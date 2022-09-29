@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dtu-6I-CLd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syy-yV-vyu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To8-pF-Dfm">
+                                        <rect key="frame" x="20" y="70" width="94" height="47"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="40"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bilge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSd-Au-KeF">
+                                        <rect key="frame" x="20" y="117" width="53.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="25"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7O-iX-afz">
+                                        <rect key="frame" x="20" y="196" width="374" height="22"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="19"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="SecondaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="h7O-iX-afz" secondAttribute="bottom" constant="32" id="4Nz-3p-9O0"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="To8-pF-Dfm" secondAttribute="trailing" constant="20" symbolic="YES" id="COk-S8-pwL"/>
+                                    <constraint firstItem="To8-pF-Dfm" firstAttribute="top" secondItem="syy-yV-vyu" secondAttribute="top" constant="70" id="QCp-fY-nWW"/>
+                                    <constraint firstItem="To8-pF-Dfm" firstAttribute="leading" secondItem="syy-yV-vyu" secondAttribute="leading" constant="20" id="R9T-Ui-FDw"/>
+                                    <constraint firstItem="sSd-Au-KeF" firstAttribute="top" secondItem="To8-pF-Dfm" secondAttribute="bottom" id="YUY-g8-uEM"/>
+                                    <constraint firstItem="sSd-Au-KeF" firstAttribute="leading" secondItem="syy-yV-vyu" secondAttribute="leading" constant="20" id="YrC-XM-EVY"/>
+                                    <constraint firstItem="h7O-iX-afz" firstAttribute="leading" secondItem="syy-yV-vyu" secondAttribute="leading" constant="20" id="iPV-OX-X2A"/>
+                                    <constraint firstAttribute="height" constant="250" id="nbO-Z9-FGM"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sSd-Au-KeF" secondAttribute="trailing" constant="20" symbolic="YES" id="yqP-Al-V9Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="h7O-iX-afz" secondAttribute="trailing" constant="20" id="zgR-jV-ZhJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GNE-go-abB">
+                                <rect key="frame" x="0.0" y="250" width="414" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="MHS-ER-bO2">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" name="PrimaryColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GNE-go-abB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6KG-rb-szy"/>
+                            <constraint firstItem="GNE-go-abB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7Y5-uA-ReP"/>
+                            <constraint firstItem="syy-yV-vyu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VIU-mK-mgz"/>
+                            <constraint firstItem="GNE-go-abB" firstAttribute="top" secondItem="syy-yV-vyu" secondAttribute="bottom" id="Z3i-13-m48"/>
+                            <constraint firstItem="MHS-ER-bO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fkS-HX-oue"/>
+                            <constraint firstItem="GNE-go-abB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h4c-q3-Ycp"/>
+                            <constraint firstItem="syy-yV-vyu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iFd-D2-bWI"/>
+                            <constraint firstItem="MHS-ER-bO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pF6-PD-ORa"/>
+                            <constraint firstItem="syy-yV-vyu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tqW-0P-BTq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="UqD-Mh-AKe"/>
+                    <connections>
+                        <outlet property="postsTableview" destination="GNE-go-abB" id="fyu-Ka-ugt"/>
+                        <outlet property="yellowActivityIndicator" destination="MHS-ER-bO2" id="yGm-yc-BgR"/>
+                        <outlet property="yellowView" destination="syy-yV-vyu" id="znt-90-6vy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542.02898550724638" y="654.91071428571422"/>
+        </scene>
+        <!--Galery-->
+        <scene sceneID="NLZ-LO-lSF">
+            <objects>
+                <viewController id="pEZ-6Y-8wV" customClass="GaleryViewController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tf2-M6-fYS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTO GALLERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd3-Nz-Sq8">
+                                <rect key="frame" x="32" y="76" width="350" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x0t-m6-uq2">
+                                <rect key="frame" x="0.0" y="116" width="414" height="697"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BzU-Bw-F5M">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GaleryCollectionViewCell" id="2VV-wp-xiQ" customClass="GaleryCollectionViewCell" customModule="TodoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="enA-AS-PSR">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-lM-wHD">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" name="PrimaryColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UrY-x4-OLk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xd3-Nz-Sq8" firstAttribute="leading" secondItem="UrY-x4-OLk" secondAttribute="leading" constant="32" id="D4E-RM-1E6"/>
+                            <constraint firstItem="x0t-m6-uq2" firstAttribute="leading" secondItem="UrY-x4-OLk" secondAttribute="leading" id="Gph-oL-Xb9"/>
+                            <constraint firstItem="UrY-x4-OLk" firstAttribute="trailing" secondItem="x0t-m6-uq2" secondAttribute="trailing" id="IWr-im-Gy8"/>
+                            <constraint firstItem="x0t-m6-uq2" firstAttribute="top" secondItem="Xd3-Nz-Sq8" secondAttribute="bottom" constant="20" id="SOl-ID-4oB"/>
+                            <constraint firstItem="Xd3-Nz-Sq8" firstAttribute="top" secondItem="UrY-x4-OLk" secondAttribute="top" constant="32" id="cX2-k8-AFQ"/>
+                            <constraint firstItem="pVp-lM-wHD" firstAttribute="centerY" secondItem="tf2-M6-fYS" secondAttribute="centerY" id="dQE-Py-uQf"/>
+                            <constraint firstItem="UrY-x4-OLk" firstAttribute="bottom" secondItem="x0t-m6-uq2" secondAttribute="bottom" id="eKf-jy-bjV"/>
+                            <constraint firstItem="pVp-lM-wHD" firstAttribute="centerX" secondItem="tf2-M6-fYS" secondAttribute="centerX" id="jBh-ZP-znq"/>
+                            <constraint firstItem="UrY-x4-OLk" firstAttribute="trailing" secondItem="Xd3-Nz-Sq8" secondAttribute="trailing" constant="32" id="pYT-wl-LAH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Galery" image="photo.on.rectangle.angled" catalog="system" id="5tt-DA-Gg7"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="pVp-lM-wHD" id="1mq-mL-Hfn"/>
+                        <outlet property="galeryCollectionView" destination="x0t-m6-uq2" id="gHo-Ws-8UX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxm-Mw-HfC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="655"/>
+        </scene>
+        <!--To Do-->
+        <scene sceneID="xKA-0n-Vsg">
+            <objects>
+                <viewController id="YpI-Nh-AL5" customClass="TodoViewController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9S-pa-vmh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO DO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ti-RN-sXU">
+                                <rect key="frame" x="32" y="76" width="350" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1KR-zh-Zet"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ti-RN-sXU" firstAttribute="leading" secondItem="1KR-zh-Zet" secondAttribute="leading" constant="32" id="bzw-dg-qGi"/>
+                            <constraint firstItem="1KR-zh-Zet" firstAttribute="trailing" secondItem="3Ti-RN-sXU" secondAttribute="trailing" constant="32" id="mIG-Cg-Dqh"/>
+                            <constraint firstItem="3Ti-RN-sXU" firstAttribute="top" secondItem="1KR-zh-Zet" secondAttribute="top" constant="32" id="yuz-uh-0Vt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="To Do" image="pencil.and.outline" catalog="system" id="yqb-m3-Trd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoJ-Ds-Y5i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="655"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pfJ-w3-bWM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Dtu-6I-CLd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UQr-2t-RdX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="PrimaryColor"/>
+                        <color key="selectedImageTintColor" name="PrimaryColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6fk-Em-LBf"/>
+                        <segue destination="pEZ-6Y-8wV" kind="relationship" relationship="viewControllers" id="ACz-YI-vgm"/>
+                        <segue destination="YpI-Nh-AL5" kind="relationship" relationship="viewControllers" id="y5f-0g-SU2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TT7-m9-9Mw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="-292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="100"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.9570000171661377" green="0.72500002384185791" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="0.9137254901960784" green="0.77647058823529413" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
